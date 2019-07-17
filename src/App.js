@@ -15,6 +15,7 @@ const modelParams = {
 class App extends Component {
 
     componentDidMount() {
+        console.log('component mounted');
         navigator.getUserMedia = navigator.getUserMedia ||
             navigator.webkitGetUserMedia ||
             navigator.mozGerUserMedia ||
