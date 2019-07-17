@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://gmacmaster.github.io/signCollection",
   "dependencies": {
+    "@material-ui/core": "^4.2.0",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",

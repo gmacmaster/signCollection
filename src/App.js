@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import Button from '@material-ui/core/Button';
 import './App.css';
 
 const modelParams = {
@@ -22,7 +23,6 @@ class App extends Component {
             navigator.msGetUserMedia;
 
 // Get html elements
-        const audio = document.querySelector('#audio');
         const canvas = document.querySelector('#canvas');
         const video = document.querySelector('#video');
         const context = canvas.getContext('2d');
@@ -55,11 +55,14 @@ class App extends Component {
 
     render() {
     return (
-      <div className="App">
-          <audio src="./sound.mp3" id='audio'/>
+      <div className="App" style={{ minHeight: '100vh' }}>
+          <Button variant="contained" color="primary">
+              Hello World
+          </Button>
+          <br />
           <video id='video'/>
           <canvas id='canvas'/>
-          <footer/>
+          <Footer sectionID="footer"/>
       </div>
     );
   }
